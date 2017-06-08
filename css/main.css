@@ -95,7 +95,93 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+@font-face {
+    font-family: 'Kikelet';
+    src: url(fonts/Kikelet.ttf) format('truetype');
+}
+body {
+    margin: 0;
+}
+.gift_coupon {
+    height: 364px;
+    width: 730px;
+    margin: auto;
+    background: url("../img/tamp.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gift_coupon+.gift_coupon+.gift_coupon{
+    page-break-after:always;
+}
+.title {
+    position: absolute;
+    top: 104px;
+    right: 15px;
+    text-align: center;
+    width: 448px;
+    font-family: Kikelet, serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+}
+.month_name {
+    position: absolute;
+    top: 140px;
+    right: 15px;
+    text-align: center;
+    width: 448px;
+    font-size: 30px;
+    line-height: 1;
+}
+.amount {
+    position: absolute;
+    top: 180px;
+    right: 15px;
+    text-align: center;
+    width: 448px;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.name {
+    position: absolute;
+    top: 228px;
+    right: 15px;
+    text-align: left;
+    width: 365px;
+    font-size: 18px;
+    line-height: 1;
+}
+.pin {
+    position: absolute;
+    top: 256px;
+    right: 15px;
+    text-align: left;
+    width: 365px;
+    font-size: 18px;
+    line-height: 1;
+}
+.code {
+    position: absolute;
+    top: 283px;
+    right: 15px;
+    text-align: left;
+    width: 365px;
+    font-size: 18px;
+    line-height: 1;
+}
+.code span {
+    background: #FFFFFF;
+}
+.validity {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 280px;
+    right: -25px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
 
 
 
@@ -196,9 +282,9 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -214,8 +300,8 @@ textarea {
     *:after,
     *:first-letter,
     *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        /*background: transparent !important;*/
+        /*color: #000 !important;  Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
