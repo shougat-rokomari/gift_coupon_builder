@@ -110,7 +110,7 @@ body {
     background-size: cover;
     position: relative;
 }
-.gift_coupon+.gift_coupon+.gift_coupon{
+.gift_coupon:nth-child(3n){
     page-break-after:always;
 }
 .title {
